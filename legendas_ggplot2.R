@@ -48,4 +48,22 @@ p + theme(legend.position = c(0.7, 0.2), legend.direction = "horizontal")
 
 # Ordem dos rótulos ------------------------------------------------------------------------------------------------------------------------
 
+## Para alterar a ordem dos rótulos onde as áreas do boxplot são preenchidas
+## por grupos, você pode seguir da seguinte maneira:
 
+p + scale_fill_discrete(guide = guide_legend(reverse = TRUE))
+
+# Tamanho e cor da legenda -----------------------------------------------------------------------------------------------------------------
+
+p + theme(legend.title = element_text(color = "blue", size = 20), 
+          legend.text = element_text(color = "red", size = 15))
+
+# Manipulando os rótulos -------------------------------------------------------------------------------------------------------------------
+
+## Para alterar manualmente a ordem dos itens:
+
+p + scale_x_discrete(limits = c("2", "0.5", "1"))
+
+## Para editar o título da legenda, dos labels (rótulos) e do eixo x:
+
+p + scale_fill_discrete(name = "Dose (mg)", labels = c("A", "B", "C"))
