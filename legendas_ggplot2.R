@@ -60,10 +60,10 @@ p + theme(legend.title = element_text(color = "blue", size = 20),
 
 # Manipulando os rótulos -------------------------------------------------------------------------------------------------------------------
 
-## Para alterar manualmente a ordem dos itens:
+## Para alterar manualmente a ordem dos itens no eixo x:
 
 p + scale_x_discrete(limits = c("2", "0.5", "1"))
 
-## Para editar o título da legenda, dos labels (rótulos) e do eixo x:
+## Para editar o título da legenda e dos labels (rótulos):
 
 p + scale_fill_discrete(name = "Dose (mg)", labels = c("A", "B", "C"))
