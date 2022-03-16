@@ -33,3 +33,19 @@ p
 
 ## p + theme(legend.title = elemente_blank()) remove o título da legenda.
 
+# Título da legenda ------------------------------------------------------------------------------------------------------------------------
+
+p + labs(fill = "Dose (mg)")
+
+# Posição da legenda -----------------------------------------------------------------------------------------------------------------------
+
+## Mudando a posição da legenda a partir dos valores: "left", "top", "right", "bottom",
+## "none" (remove a legenda) e vetor c(x,y).
+
+p + theme(legend.position = "top")
+
+p + theme(legend.position = c(0.7, 0.2), legend.direction = "horizontal")
+
+# Ordem dos rótulos ------------------------------------------------------------------------------------------------------------------------
+
+
