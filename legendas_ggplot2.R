@@ -67,3 +67,12 @@ p + scale_x_discrete(limits = c("2", "0.5", "1"))
 ## Para editar o título da legenda e dos labels (rótulos):
 
 p + scale_fill_discrete(name = "Dose (mg)", labels = c("A", "B", "C"))
+
+# Alterando as cores manualmente -----------------------------------------------------------------------------------------------------------
+
+## Para modificar manualmente as cores da legenda:
+
+## - scale_color_manual() ou scale_colour_manual(): modifica a cor dos pontos e linhas;
+## - scale_fill_manual() modifica as cores de preenchimento dos gráficos de barras e boxplot.
+
+p + scale_fill_manual(values = c("#d8b365", "#f5f5f5", "#5ab4ac"))
